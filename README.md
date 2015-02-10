@@ -9,3 +9,7 @@ https://github.com/chovy/node-startup
 
 .gitignore settings copied from:
 https://github.com/github/gitignore/blob/master/Node.gitignore
+
+Getting started with express using:
+http://cwbuecheler.com/web/tutorials/2013/node-express-mongo/ and
+http://cwbuecheler.com/web/tutorials/2014/restful-web-app-node-express-mongodb/
