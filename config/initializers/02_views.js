@@ -1,11 +1,12 @@
 module.exports = function() {
   // Configure view-related settings.  Consult the Express API Reference for a
   // list of the available [settings](http://expressjs.com/api.html#app-settings).
+  var cons = require('consolidate');
   this.set('views', __dirname + '/../../app/views');
-  this.set('view engine', 'ejs');
+  this.set('view engine', 'twig');
 
-  // Register EJS as a template engine.
-  this.engine('ejs', require('ejs').__express);
+  // Register Swig as a template engine.
+  this.engine('twig', cons.swig);
 
   // Override default template extension.  By default, Locomotive finds
   // templates using the `name.format.engine` convention, for example
