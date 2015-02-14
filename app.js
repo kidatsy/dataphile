@@ -10,18 +10,16 @@ var mongo = require('mongodb');         // This sets up the connection to the mo
 var monk = require('monk');
 var db = monk('localhost:27017/dataphile');
 
+var routes = require('./app/controllers/index');
+var users = require('./app/controllers/users');
+
 var cons = require('consolidate');
-var http = require('http');
-
-var routes = require('./routes/index');
-var users = require('./routes/users');
-
 var app = express();
 
 // view engine setup
 app.engine('html', cons.swig);
 app.set('view engine', 'html');
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, './app/views'));
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(__dirname + '/public/favicon.ico'));

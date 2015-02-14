@@ -6,22 +6,6 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-/* GET Hello World */
-router.get('/helloworld', function(req, res, next) {
-  res.render('helloworld', { title: 'Hello, World!' });
-});
-
-router.get('/users', function(req, res) {
-    var db = req.db;
-    var collection = db.get('usercollection');
-    collection.find({},{},function(e,users){
-        res.render('users', {
-            title: 'Users',
-            users: users,
-        });
-    });
-});
-
 /* TUTORIAL
 router.get('/users', function(req, res) {       // Setting the route here
     var db = req.db;                            // Getting the db, defined in app.js
