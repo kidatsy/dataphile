@@ -14,6 +14,9 @@ https://github.com/github/gitignore/blob/master/Node.gitignore
 http://cwbuecheler.com/web/tutorials/2013/node-express-mongo/ and
 http://cwbuecheler.com/web/tutorials/2014/restful-web-app-node-express-mongodb/
 
+- Moving to use Locomotive framework, on top of Express.js:
+http://locomotivejs.org/
+
 - You'll need to install dependencies via npm when first starting up:
 ```
 npm install
