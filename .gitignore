@@ -33,3 +33,6 @@ node_modules
 # IGNORING SASS
 .sass-cache
 *.css.map
+
+# IGNORING DB
+data

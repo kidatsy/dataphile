@@ -1,0 +1,11 @@
+{% extends 'partials/base-anon.html' %}
+
+{% block body %}
+
+{% for user in users %}
+    {% if loop.first %}<ul>{% endif %}
+    <li>User: <a href="mailto:{{ user.email }}">{{ user.username }}</a></li>
+    {% if loop.last %}</ul>{% endif %}
+{% endfor %}
+
+{% endblock %}
