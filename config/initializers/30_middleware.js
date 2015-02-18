@@ -1,5 +1,4 @@
-var express = require('express')
-  , poweredBy = require('connect-powered-by');
+var express = require('express');
 
 module.exports = function() {
   // Use middleware.  Standard [Connect](http://www.senchalabs.org/connect/)
@@ -9,7 +8,6 @@ module.exports = function() {
     this.use(express.logger());
   }
 
-  this.use(poweredBy('Locomotive'));
   this.use(express.favicon());
   this.use(express.static(__dirname + '/../../public'));
   this.use(express.bodyParser());

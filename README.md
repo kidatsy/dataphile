@@ -17,6 +17,9 @@ http://cwbuecheler.com/web/tutorials/2014/restful-web-app-node-express-mongodb/
 - Moving to use Locomotive framework, on top of Express.js:
 http://locomotivejs.org/
 
+- Using this to figure out how to use Mongoose with Locomotive, as the former's documentation is horrible:
+https://github.com/kuryaki/locomotive-example
+
 - You'll need to install dependencies via npm when first starting up:
 ```
 npm install
