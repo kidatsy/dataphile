@@ -5,7 +5,12 @@
 // `function(req, res, next)` is also fully supported.  Consult the Locomotive
 // Guide on [routing](http://locomotivejs.org/guide/routing.html) for additional
 // information.
+var form = require('express-form');
+var field = form.field;
+
 module.exports = function routes() {
-  this.root('pages#main');
-  this.match('testingadd', 'pages#add', { via: 'get'});
+    this.root('pages#main');
+    this.match('accounts/register', 'accounts#register');
+    this.resources('accounts');
+    //this.post('accounts/add', 'accounts#add', { via: 'post'});
 }

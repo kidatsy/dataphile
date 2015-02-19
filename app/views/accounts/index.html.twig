@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/css/screen.css" />
+  </head>
+  <body>
+    <h1>{{ title }}</h1>
+    <table>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+        <th>Delete</th>
+      </tr>
+      {% for account in accounts %}
+        <tr>
+          <td>{{ account.name.first }}</td>
+          <td>{{ account.name.last }}</td>
+          <td>{{ account.email }}</td>
+          <td><a href="accounts/{{ account.id }}/delete">Delete</a></td>
+        </tr>
+      {% endfor %}
+  </body>
+</html>
