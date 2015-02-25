@@ -10,7 +10,15 @@ var field = form.field;
 
 module.exports = function routes() {
     this.root('pages#main');
-    this.match('accounts/register', 'accounts#register');
-    this.resources('accounts');
+    this.namespace('api', function() {
+        this.namespace('accounts', function() {
+            this.match('register', 'accounts#register');
+            this.post('save', 'accounts#save');
+            this.post('edit', 'accounts#edit');
+            this.match('all', 'accounts#all');
+            this.match('show/:id', 'accounts#show');
+        });
+        //this.resources('accounts');
+    });
     //this.post('accounts/add', 'accounts#add', { via: 'post'});
 }

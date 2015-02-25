@@ -7,6 +7,8 @@
     "bootable": "0.2.x",
     "bootable-environment": "0.2.x",
     "consolidate": "^0.11.0",
+    "ember": "^1.0.0-pre.2",
+    "ember-data": "^1.0.0-beta.15",
     "express": "3.x.x",
     "express-form": "^0.12.4",
     "express-stackman": "^0.1.2",
