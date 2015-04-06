@@ -1,7 +1,6 @@
 var locomotive = require('locomotive')
   , bootable = require('bootable');
-
-var locomotive.boot.httpSocketioServer = require('locomotive-http-socketio-server');
+locomotive.boot.httpSocketioServer = require('locomotive-http-socketio-server');
 
 // Create a new application and initialize it with *required* support for
 // controllers and views.  Move (or remove) these lines at your own peril.
