@@ -5,6 +5,7 @@ var pagesController = new Controller();
 
 pagesController.main = function() {
   this.title = 'Locomotive';
+  console.log('this is the console.');
   this.render();
 }
 
