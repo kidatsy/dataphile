@@ -1,6 +1,5 @@
 var locomotive = require('locomotive')
   , bootable = require('bootable');
-locomotive.boot.httpSocketioServer = require('locomotive-http-socketio-server');
 
 // Create a new application and initialize it with *required* support for
 // controllers and views.  Move (or remove) these lines at your own peril.
@@ -15,7 +14,6 @@ app.phase(locomotive.boot.views());
 app.phase(require('bootable-environment')(__dirname + '/config/environments'));
 app.phase(bootable.initializers(__dirname + '/config/initializers'));
 app.phase(locomotive.boot.routes(__dirname + '/config/routes'));
-app.phase(locomotive.boot.httpSocketioServer(8080, '0.0.0.0'));
 
 // Handle the socket.io events that are specific to your application
 app.phase(require(__dirname + '/app/socket'))

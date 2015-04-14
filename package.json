@@ -9,9 +9,8 @@
     "consolidate": "^0.12.1",
     "ejs": "0.8.x",
     "express": "3.x.x",
+    "express.io": "^1.1.13",
     "locomotive": "0.4.x",
-    "locomotive-http-socketio-server": "^0.1.1",
-    "socket.io": "^0.9.17",
     "swig": "^1.4.2"
   },
   "scripts": {
